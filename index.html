@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Coffee brewing calculator</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1>Coffee brewing calculator</h1>
+                <div class="row">
+                    <div class="column">
+                        <h2>Coffee beans</h2>
+                        <div class="input-group">
+                            <input type="number" value="8" min="8" class="beans"/>
+                            <p class="unit">g</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Water</h2>
+                        <div class="input-group">
+                            <input type="number" value="128" class="water" />
+                            <p class="unit">ml</p> 
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Ratio</h2>
+                        <div class="input-group">
+                            <input type="number" value="16" min="16" class="ratio" />
+                            <p class="unit">:1</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Coffee yield</h2>
+                        <div class="input-group">
+                            <input type="number" value="115.2" class="coffee-yield" />
+                            <p class="unit">ml</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="coffeeCal.js"></script>
+        </main>
+    </body>
+</html>
