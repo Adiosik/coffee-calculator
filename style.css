@@ -41,6 +41,7 @@ input {
 
 .input-group {
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .unit {
