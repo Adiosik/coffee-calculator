@@ -43,6 +43,10 @@ input {
     padding-inline: 0.75rem;
 }
 
+input:focus {
+    outline: 1px solid blue;
+}
+
 .input-group {
     display: flex;
     margin-bottom: 1rem;
