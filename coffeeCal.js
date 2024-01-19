@@ -73,3 +73,51 @@ beansInput.addEventListener('input', onUserInput);
 waterInput.addEventListener('input', onUserInput);
 ratioInput.addEventListener('input', onUserInput);
 yieldInput.addEventListener('input', onYieldInput);
+
+// TIMER
+const timerInput = document.querySelector(".timer");
+const countdownInput = document.querySelector(".countdown");
+const startButton = document.querySelector(".start");
+const stopButton = document.querySelector(".stop");
+const resetButton = document.querySelector(".reset");
+
+let countdownInterval;
+let countdownTime;
+
+const writeCountdownTimeIntoInput = () => {
+    const minutes = Math.floor(countdownTime / 60);
+    // modulo, zbytek po dělení
+    const seconds = countdownTime % 60; 
+    // přidání nuly na začátek, pokud je délka řetězce menší než 2
+    countdownInput.value = `${minutes}:${(seconds).toString().padStart(2, "0")}`;
+}
+
+const everySecond = () => {
+    countdownTime--
+    writeCountdownTimeIntoInput();
+    if (countdownTime === 0) {
+        stop();
+    }
+}
+
+const start = () => {
+    stop();
+    countdownInterval = setInterval(everySecond, 1000);
+}
+
+const stop = () => {
+    clearInterval(countdownInterval);
+}
+
+const reset = () => {
+    stop();
+    countdownTime = (timerInput.valueAsNumber || 0) * 60;
+    writeCountdownTimeIntoInput(); 
+}
+
+timerInput.addEventListener("input", reset);
+startButton.addEventListener("click", start);
+stopButton.addEventListener("click", stop);
+resetButton.addEventListener("click", reset);
+
+reset();
