@@ -40,7 +40,6 @@ label {
 
 input {
     border: 1px solid green;
-    border-radius: 5px;
     padding-block: 0.375rem;
     padding-inline: 0.75rem;
 }
@@ -55,6 +54,8 @@ input:focus {
 }
 
 .unit {
+    background-color: whitesmoke;
+    border: 1px solid gray;
     padding: 0.375rem 0.75rem;
     margin: 0;
 }
