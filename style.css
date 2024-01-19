@@ -28,9 +28,11 @@ h2 {
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
 }
 
 .column {
+    flex: 1 0 0;
     padding-inline: 2rem;
 }
 
