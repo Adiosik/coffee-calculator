@@ -77,3 +77,15 @@ button {
 .reset {
     background-color: black;
 }
+
+.progress {
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: aqua;
+    height: 100%;
+    width: 80%;
+}

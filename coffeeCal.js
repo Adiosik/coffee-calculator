@@ -80,6 +80,7 @@ const countdownInput = document.querySelector(".countdown");
 const startButton = document.querySelector(".start");
 const stopButton = document.querySelector(".stop");
 const resetButton = document.querySelector(".reset");
+const progressBar = document.querySelector(".progress-bar");
 
 let countdownInterval;
 let countdownTime;
@@ -90,6 +91,8 @@ const writeCountdownTimeIntoInput = () => {
     const seconds = countdownTime % 60; 
     // přidání nuly na začátek, pokud je délka řetězce menší než 2
     countdownInput.value = `${minutes}:${(seconds).toString().padStart(2, "0")}`;
+
+    progressBar.style.width = `${countdownTime / ((timerInput.valueAsNumber || 0) * 60)*100}%`
 }
 
 const everySecond = () => {
