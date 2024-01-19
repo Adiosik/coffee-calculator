@@ -60,6 +60,10 @@ input:focus {
     margin: 0;
 }
 
+.input-buttons {
+    display: flex;
+}
+
 button {
     color: white;
     border: none;
