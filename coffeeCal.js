@@ -3,17 +3,18 @@ const ratioInput = document.querySelector('.ratio');
 const waterInput = document.querySelector('.water');
 const yieldInput = document.querySelector('.coffee-yield');
 
-// Výpočet množstí beans (ratio T/F, ? pro podmínku, vrátí 0 když je T, když F tak provede výpoočet)
-// .toFixed(2) pro zaokrohlení n a dvě desetiny
-const calculateBeans = (water, ratio) => ratio === 0 ? 0 : (water / ratio).toFixed(2);
+// Funkce pro zaokrouhlování na dvě desetinná místa
+const roundToTwoDecimals = (value) => Math.round(value * 100) / 100;
+// Výpočet množstí beans (ratio T/F, ? pro podmínku, vrátí 0 když je T, když F tak provede výpočet)
+const calculateBeans = (water, ratio) => ratio === 0 ? 0 : roundToTwoDecimals(water / ratio);
 // Výpočet množství ratio
-const calculateRatio = (water, beans) => beans === 0 ? 0 : (water / beans).toFixed(2);
+const calculateRatio = (water, beans) => beans === 0 ? 0 : roundToTwoDecimals(water / beans);
 // Výpočet množství water
-const calculateWater = (beans, ratio) => (beans * ratio).toFixed(2);
+const calculateWater = (beans, ratio) => roundToTwoDecimals(beans * ratio);
 // Výpočet množství water z yieldu
-const calculateWaterFromYield = (yield) => (yield / 0.9).toFixed(2);
+const calculateWaterFromYield = (yield) => roundToTwoDecimals(yield / 0.9);
 // Výpočet množství yield (90%)
-const calculateYield = (water) => (water * 0.9).toFixed(2);
+const calculateYield = (water) => roundToTwoDecimals(water * 0.9);
 
 let currentInput = beansInput;
 let previousInput = beansInput;
