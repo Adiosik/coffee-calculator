@@ -1,6 +1,6 @@
 # Coffee Calculator
 
-This Coffee Calculator is a web application that helps you with coffee brewing measurements. It provides a user-friendly interface to input and calculate the quantities of coffee beans, water, and the yield based on user preferences.
+This Coffee Calculator is a web application that helps you with coffee brewing measurements. It provides a user-friendly interface to input and calculate the quantities of coffee beans, water, and the yield based on user preferences. Link [text]()
 
 ## Features
 
@@ -24,10 +24,15 @@ Additionally, the Coffee Calculator includes a timer feature. Set the desired br
 
 ## Technologies Used
 
-- **HTML**: Structuring the web page.
-- **CSS (BEM Methodology)**: Styling the application with a maintainable and scalable architecture.
-- **JavaScript**: Implementing dynamic calculations and interactivity.
-- **Git & GitHub**: Version control and collaborative development.
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,git)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+- **HTML**
+- **CSS** - BEM
+- **JavaScript** - vanilla JS manipulating DOM
+
+## Installation
+
+You can use it by directly opening the file in a web browser. No additional installations or edits are required.
+
+---
 
 Explore the code and projects to discover how these technologies and methodologies are applied.
