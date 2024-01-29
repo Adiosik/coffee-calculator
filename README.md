@@ -1,6 +1,7 @@
 # Coffee Calculator
 
-This Coffee Calculator is a web application that helps you with coffee brewing measurements. It provides a user-friendly interface to input and calculate the quantities of coffee beans, water, and the yield based on user preferences. Link [text]()
+This Coffee Calculator is a web application that helps you with coffee brewing measurements. It provides a user-friendly interface to input and calculate the quantities of coffee beans, water, and the yield based on user preferences.  
+[Coffee Calculator](adiosik.github.io/coffee-calculator/)
 
 ## Features
 
@@ -8,13 +9,6 @@ This Coffee Calculator is a web application that helps you with coffee brewing m
 - **Sliders**: Use sliders to adjust the values interactively.
 - **Dynamic Calculations**: The application dynamically calculates and updates other values based on user input.
 - **Responsive Design**: Ensures a seamless user experience on various devices.
-
-## How to Use
-
-1. **Coffee Beans**: Input the amount of coffee beans you want to use.
-2. **Water**: Input the amount of water for brewing.
-3. **Ratio**: Input or adjust the coffee-to-water ratio according to your preference.
-4. **Yield**: Input or adjust the desired coffee yield.
 
 The application will instantly recalculate other values based on your inputs.
 
