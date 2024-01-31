@@ -1,7 +1,7 @@
 # Coffee Calculator
 
 This Coffee Calculator is a web application that helps you with coffee brewing measurements. It provides a user-friendly interface to input and calculate the quantities of coffee beans, water, and the yield based on user preferences.  
-[Coffee Calculator](adiosik.github.io/coffee-calculator/)
+You can find demo at [Coffee Calculator](adiosik.github.io/coffee-calculator/)
 
 ## Features
 
@@ -25,7 +25,7 @@ Additionally, the Coffee Calculator includes a timer feature. Set the desired br
 
 ## Installation
 
-You can use it by directly opening the file in a web browser. No additional installations or edits are required.
+You can use it by directly opening the file in a web browser. No additional installations or edits are required. Since it's a static web page, you can also easily edit its content as needed.
 
 ---
 
