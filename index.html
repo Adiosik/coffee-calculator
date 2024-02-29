@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: hsl(27, 26%, 84%); color: hsl(26, 49%, 10%);">
     <main>
         <div class="container">
             <h1>Coffee brewing calculator</h1>
@@ -15,8 +15,8 @@
                 <div class="col-md-3 mb-4">
                     <label>Coffee beans</label>
                     <div class="input-group">
-                        <input type="number" value="8" min="0" class="beans form-control"/>
-                        <span class="unit input-group-append input-group-text">g</span>
+                        <input type="number" value="8" min="0" class="beans form-control" style="color: hsl(26, 49%, 10%); border: 1px solid hsl(25, 35%, 26%);" />
+                        <span class="unit input-group-append input-group-text" style="background-color: hsl(26, 29%, 72%); border: 1px solid hsl(25, 35%, 26%);">g</span>
                     </div>
                     <div class="input-group mt-2">
                         <input type="range" value="8" min="5" max="100" step="1" class="beans-slider form-control-range">
@@ -25,8 +25,8 @@
                 <div class="col-md-3 mb-4">
                     <label>Water</label>
                     <div class="input-group">
-                        <input type="number" value="120" min="0" class="water form-control" />
-                        <span class="unit input-group-append input-group-text">ml</span>
+                        <input type="number" value="120" min="0" class="water form-control" style="color: hsl(26, 49%, 10%); border: 1px solid hsl(25, 35%, 26%);" />
+                        <span class="unit input-group-append input-group-text" style="background-color: hsl(26, 29%, 72%); border: 1px solid hsl(25, 35%, 26%);">ml</span>
                     </div>
                     <div class="input-group mt-2">
                         <input type="range" value="120" min="10" max="2000" step="10" class="water-slider form-control-range">
@@ -35,8 +35,8 @@
                 <div class="col-md-3 mb-4">
                     <label>Ratio</label>
                     <div class="input-group">
-                        <input type="number" value="15" min="0" class="ratio form-control" />
-                        <span class="unit input-group-append input-group-text">:1</span>
+                        <input type="number" value="15" min="0" class="ratio form-control" style="color: hsl(26, 49%, 10%); border: 1px solid hsl(25, 35%, 26%);" />
+                        <span class="unit input-group-append input-group-text" style="background-color: hsl(26, 29%, 72%); border: 1px solid hsl(25, 35%, 26%);">:1</span>
                     </div>
                     <div class="input-group mt-2">
                         <input type="range" value="15" min="1" max="30" step="1" class="ratio-slider form-control-range">
@@ -45,8 +45,8 @@
                 <div class="col-md-3 mb-4">
                     <label>Coffee yield</label>
                     <div class="input-group">
-                        <input type="number" value="108" min="0" class="coffee-yield form-control" />
-                        <span class="unit input-group-append input-group-text">ml</span>
+                        <input type="number" value="108" min="0" class="coffee-yield form-control" style="color: hsl(26, 49%, 10%); border: 1px solid hsl(25, 35%, 26%);" />
+                        <span class="unit input-group-append input-group-text" style="background-color: hsl(26, 29%, 72%); border: 1px solid hsl(25, 35%, 26%);">ml</span>
                     </div>
                     <div class="input-group mt-2">
                         <input type="range" value="108" min="10" max="2000" step="1" class="yield-slider form-control-range">
@@ -57,25 +57,25 @@
                 <div class="col-md-4 mb-4">
                     <label>Timer</label>
                     <div class="input-group">
-                        <input type="number" value="10" class="timer form-control" />
-                        <span class="unit input-group-append input-group-text">min</span>
+                        <input type="number" value="10" class="timer form-control" style="color: hsl(26, 49%, 10%); border: 1px solid hsl(25, 35%, 26%);" />
+                        <span class="unit input-group-append input-group-text" style="background-color: hsl(26, 29%, 72%); border: 1px solid hsl(25, 35%, 26%);">min</span>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <label>Countdown</label>
                     <div class="input-group">
-                        <input type="text" class="countdown form-control" readonly />
+                        <input type="text" class="countdown form-control" readonly style="background-color: hsl(0, 0%, 100%); color: hsl(26, 49%, 10%); border: 1px solid hsl(25, 35%, 26%);" />
                         <div class="input-buttons input-group-append">
-                            <button type="button" class="start btn btn-primary">Start</button>
-                            <button type="button" class="stop btn btn-secondary">Stop</button>
-                            <button type="button" class="reset btn btn-danger">Reset</button>
+                            <button type="button" class="start btn" style="background-color: hsl(26, 33%, 48%); color: hsl(0, 0%, 100%);">Start</button>
+                            <button type="button" class="stop btn" style="background-color: hsl(25, 35%, 26%); color: hsl(0, 0%, 100%);">Stop</button>
+                            <button type="button" class="reset btn " style="background-color: hsl(26, 49%, 10%); color: hsl(0, 0%, 100%);">Reset</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <label>Progress bar</label>
-                    <div class="progress" style="height: 38px;">
-                        <div id="progress" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width: 0%;"></div>
+                    <div class="progress" style="height: 38px; border: 1px solid hsl(25, 35%, 26%);">
+                        <div id="progress" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width: 0%; background-color: hsl(25, 35%, 26%);"></div>
                     </div>                        
                 </div>
             </div>
