@@ -21,8 +21,8 @@ Additionally, the Coffee Calculator includes a timer feature. Set the desired br
 
 [![My Skills](https://skillicons.dev/icons?i=html,js,bootstrap)](https://skillicons.dev)
 - **HTML**
-- **Bootstrap**
 - **JavaScript** –⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ vanilla JS manipulating DOM
+- **Bootstrap**
 
 ## Installation
 
